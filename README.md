@@ -1,7 +1,8 @@
 
 # SMFNet
 
-Pytorch implementation for [MEANet:  Multi-Modal Edge-Aware Network for Light Field Salient Object Detection](https://www.sciencedirect.com/science/article/pii/S0925231222003502).
+Pytorch implementation for [Selective Modal Fusion for RGB-D Video Salient
+Object detection](https://www.sciencedirect.com/science/article/pii/S0925231222003502).
 
 
 # Requirements
