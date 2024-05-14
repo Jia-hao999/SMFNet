@@ -1,60 +1,46 @@
 
 # SMFNet
 
-Pytorch implementation for [Selective Modal Fusion for RGB-D Video Salient
-Object detection](https://www.sciencedirect.com/science/article/pii/S0925231222003502).
+Pytorch implementation for SMFNet: Selective Modal Fusion for RGB-D Video Salient
+Object detection.
 
 
 # Requirements
-* Python 3.6 <br>
-* Torch 1.10.2 <br>
-* Torchvision 0.4.0 <br>
-* Cuda 10.0 <br>
-* Tensorboard 2.7.0
+* Python 3.7.0 <br>
+* Torch 1.7.1 <br>
+* Torchvision 0.8.2 <br>
+* Cuda 11.0 <br>
 
 # Usage
 
 ## To Train 
-* Download the [training dataset](https://github.com/kerenfu/LFSOD-Survey) and modify the 'train_data_path'.
-* Start to train with
-```sh
-python -m torch.distributed.launch --nproc_per_node=4 train.py 
-```
+
+### For training on RGB-D VSOD benchmarks
+1. Download the datasets (RDVS and DVisal) from [Baidu Driver](https://pan.baidu.com/s/1mVtAWJS0eC690nPXav2lwg) (PSW: 7yer) and save it at './dataset/'. 
+2. Download the pre_trained RGB, depth and flow stream models from [Baidu Driver](https://pan.baidu.com/s/1HptTP81LXANJ9W0Lu3XCQA) (PSW: 8lux) to './checkpoints/'.
+3. Run `python train.py` in terminal.
+
+### For training on VSOD benchmarks
+1. Download the training datasets (DAVIS, DAVSOD, FBMS) from [Baidu Driver](https://pan.baidu.com/s/1mVtAWJS0eC690nPXav2lwg) (PSW: 7yer) and save it at './vsod_dataset/train'. 
+2. Download the pre_trained RGB, depth and flow stream models from [Baidu Driver](https://pan.baidu.com/s/1HptTP81LXANJ9W0Lu3XCQA) (PSW: 8lux) to './checkpoints/'.
+3. Run `python train.py` in terminal.
+
+### For pretraining single stream
+Run `python pretrain.py` in terminal. When pretraining RGB stream, we additionally use DUTS-TR [Baidu Driver](https://pan.baidu.com/s/1mVtAWJS0eC690nPXav2lwg) (PSW: 7yer).
 
 ## To Test
-* Download the [testing dataset](https://github.com/kerenfu/LFSOD-Survey) and have it in the 'dataset/test/' folder. 
-* Download the already-trained [MEANet model](#trained-model-for-testing) and have it in the 'trained_weight/' folder.
-* Change the `weight_name` in `test.py` to the model to be evaluated.
-* Start to test with
-```sh
-python test.py  
-```
 
-# Download
+### For testing on RGB-D VSOD benchmarks
+1. Download the trained model from [Baidu Driver](https://pan.baidu.com/s/1Z8Sut8bOGOwbUBf0Tmhm4w) (PSW: lze1) to './checkpoints/'.
+2. Run `python test.py` in the terminal.
 
-## Trained model for testing
-We released two versions of the trained model: 
+### For testing on VSOD benchmarks
+1. Download the trained model from [Baidu Driver](https://pan.baidu.com/s/1Z8Sut8bOGOwbUBf0Tmhm4w) (PSW: lze1) to './checkpoints/'.
+2. Run `python test.py` in the terminal.
 
-Trained with additional 100 samples from HFUT-Lytro on [baidu pan](https://pan.baidu.com/s/1kd2ZjhwNcB4cEdGFwIUgUg?pwd=0o0r) with fetch code: 0o0r or on [Google drive](https://drive.google.com/file/d/1TN0qfKz79zfBfgG1uaUv-9L-iO0bgALf/view?usp=share_link)
+## Saliency maps
+1. The saliency maps of our SMFNet can be download from [Baidu Driver](https://pan.baidu.com/s/1Z8Sut8bOGOwbUBf0Tmhm4w) (PSW: lze1, RGB-D VSOD benchmarks) and [Baidu Driver](https://pan.baidu.com/s/1Z8Sut8bOGOwbUBf0Tmhm4w) (PSW: lze1, VSOD benchmarks).
+2. We have constructed the first RGB-D VSOD benchmark, which contains the results of 19 state-of-the-art (SOTA) methods evaluated on RDVS and DVisal.
+  -We evaluate the originally trained models on the testing set of RDVS and DVisal. The saliency maps can be download from [Baidu Driver](https://pan.baidu.com/s/1Z8Sut8bOGOwbUBf0Tmhm4w) (PSW: lze1).
+  -We first fine-tune the originally trained models on the training set of RDVS and DVisal, and then evaluate the fine-tuned models on the testing set of RDVS and DVisal. The saliency maps can be download from [Baidu Driver](https://pan.baidu.com/s/1Z8Sut8bOGOwbUBf0Tmhm4w) (PSW: lze1).
 
-Trained only with DUTLF-FS on [baidu pan](https://pan.baidu.com/s/1f_lBt1tebq9oQzIeknw9cg?pwd=75bn) with fetch code: 75bn or on [Google drive](https://drive.google.com/file/d/13O7yvVBj7onGCCE5dRrWwWJmaJla_Llo/view?usp=share_link)
-
-## Saliency map
-We released two versions of the saliency map: 
-
-Trained with additional 100 samples from HFUT-Lytro on [baidu pan](https://pan.baidu.com/s/1SR6wXKgpBfw9izsZlI4lXw?pwd=x7xa) with fetch code: x7xa or on [Google drive](https://drive.google.com/file/d/1--aNySTqR-QHi_2iO4H8B8DnPttwl2Nh/view?usp=sharing)
-
-Trained only with DUTLF-FS on [baidu pan](https://pan.baidu.com/s/1luKlhBIXL0HdqxwbZZkgqg?pwd=s7vn) with fetch code: s7vn or on [Google drive](https://drive.google.com/file/d/1c5CIpZWOrECslIOIl0ZewH7dKw6tZT7i/view?usp=share_link)
-
-
-# Citation
-Please cite our paper if you find the work useful: 
-
-    @article{JIANG202278,
-    title = {MEANet: Multi-modal edge-aware network for light field salient object detection},
-    journal = {Neurocomputing},
-    volume = {491},
-    pages = {78-90},
-    year = {2022},
-    author = {Yao Jiang and Wenbo Zhang and Keren Fu and Qijun Zhao}
-    }
