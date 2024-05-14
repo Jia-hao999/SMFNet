@@ -41,6 +41,6 @@ Run `python pretrain.py` in terminal. When pretraining RGB stream, we additional
 ## Saliency maps
 1. The saliency maps of our SMFNet can be download from [Baidu Driver](https://pan.baidu.com/s/1Z8Sut8bOGOwbUBf0Tmhm4w) (PSW: lze1, RGB-D VSOD benchmarks) and [Baidu Driver](https://pan.baidu.com/s/1Z8Sut8bOGOwbUBf0Tmhm4w) (PSW: lze1, VSOD benchmarks).
 2. We have constructed the first RGB-D VSOD benchmark, which contains the results of 19 state-of-the-art (SOTA) methods evaluated on RDVS and DVisal.
-  -We evaluate the originally trained models on the testing set of RDVS and DVisal. The saliency maps can be download from [Baidu Driver](https://pan.baidu.com/s/1Z8Sut8bOGOwbUBf0Tmhm4w) (PSW: lze1).
-  -We first fine-tune the originally trained models on the training set of RDVS and DVisal, and then evaluate the fine-tuned models on the testing set of RDVS and DVisal. The saliency maps can be download from [Baidu Driver](https://pan.baidu.com/s/1Z8Sut8bOGOwbUBf0Tmhm4w) (PSW: lze1).
+   - We evaluate the originally trained models on the testing set of RDVS and DVisal. The saliency maps can be download from [Baidu Driver](https://pan.baidu.com/s/1Z8Sut8bOGOwbUBf0Tmhm4w) (PSW: lze1).
+   - We first fine-tune the originally trained models on the training set of RDVS and DVisal, and then evaluate the fine-tuned models on the testing set of RDVS and DVisal. The saliency maps can be download from [Baidu Driver](https://pan.baidu.com/s/1Z8Sut8bOGOwbUBf0Tmhm4w) (PSW: lze1).
 
