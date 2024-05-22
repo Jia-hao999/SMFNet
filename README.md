@@ -1,8 +1,7 @@
 
 # SMFNet
 
-Pytorch implementation for SMFNet: Selective Modal Fusion for RGB-D Video Salient
-Object detection.
+Pytorch implementation for SMFNet: Unleashing the Power of Motion and Depth: A Selective Fusion Strategy for RGB-D Video Salient Object Detection.
 
 
 # Requirements
