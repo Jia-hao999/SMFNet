@@ -21,7 +21,7 @@ Object detection.
 3. Run `python train.py` in terminal.
 
 ### For training on VSOD benchmarks
-1. Download the training datasets (DAVIS, DAVSOD, FBMS) from [Baidu Driver](https://pan.baidu.com/s/1mVtAWJS0eC690nPXav2lwg) (PSW: 7yer) and save it at './vsod_dataset/train'. 
+1. Download VSOD datasets from [Baidu Driver](https://pan.baidu.com/s/1mVtAWJS0eC690nPXav2lwg) (PSW: 7yer) and save the training datasets (DAVIS, DAVSOD, FBMS) at './vsod_dataset/train'.
 2. Download the pre_trained RGB, depth and flow stream models from [Baidu Driver](https://pan.baidu.com/s/1HptTP81LXANJ9W0Lu3XCQA) (PSW: 8lux) to './checkpoints/'.
 3. Run `python train.py` in terminal.
 
