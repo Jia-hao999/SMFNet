@@ -26,7 +26,7 @@ Object detection.
 3. Run `python train.py` in terminal.
 
 ### For pretraining single stream
-Run `python pretrain.py` in terminal. When pretraining RGB stream, we additionally use DUTS-TR [Baidu Driver](https://pan.baidu.com/s/1mVtAWJS0eC690nPXav2lwg) (PSW: 7yer).
+Run `python pretrain.py` in terminal. When pretraining RGB stream, we additionally use DUTS-TR [Baidu Driver](https://pan.baidu.com/s/1mVtAWJS0eC690nPXav2lwg) (PSW: 7yer) and the pre_trained ResNet34 [Baidu Driver](https://pan.baidu.com/s/1mVtAWJS0eC690nPXav2lwg) (PSW: 7yer).
 
 ## To Test
 
