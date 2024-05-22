@@ -17,30 +17,30 @@ Object detection.
 
 ### For training on RGB-D VSOD benchmarks
 1. Download the datasets (RDVS and DVisal) from [Baidu Driver](https://pan.baidu.com/s/1mVtAWJS0eC690nPXav2lwg) (PSW: 7yer) and save it at './dataset/'. 
-2. Download the pre_trained RGB, depth and flow stream models from [Baidu Driver](https://pan.baidu.com/s/1HptTP81LXANJ9W0Lu3XCQA) (PSW: 8lux) to './checkpoints/'.
+2. Download the pre_trained RGB, depth and flow stream models from [Baidu Driver](https://pan.baidu.com/s/1QIh1Fii5isWe0VOqcZxwCA) (PSW: lm6d) to './checkpoints/'.
 3. Run `python train.py` in terminal.
 
 ### For training on VSOD benchmarks
 1. Download VSOD datasets from [Baidu Driver](https://pan.baidu.com/s/1mVtAWJS0eC690nPXav2lwg) (PSW: 7yer) and save the training datasets (DAVIS, DAVSOD, FBMS) at './vsod_dataset/train'.
-2. Download the pre_trained RGB, depth and flow stream models from [Baidu Driver](https://pan.baidu.com/s/1HptTP81LXANJ9W0Lu3XCQA) (PSW: 8lux) to './checkpoints/'.
+2. Download the pre_trained RGB, depth and flow stream models from [Baidu Driver](https://pan.baidu.com/s/1-SgyEkNafLbXImqXswZWqQ) (PSW: 3c48) to './checkpoints/'.
 3. Run `python train.py` in terminal.
 
 ### For pretraining single stream
-Run `python pretrain.py` in terminal. When pretraining RGB stream, we additionally use DUTS-TR [Baidu Driver](https://pan.baidu.com/s/1mVtAWJS0eC690nPXav2lwg) (PSW: 7yer) and the pre_trained ResNet34 [Baidu Driver](https://pan.baidu.com/s/1mVtAWJS0eC690nPXav2lwg) (PSW: 7yer).
+Run `python pretrain.py` in terminal. When pretraining RGB stream, we additionally use DUTS-TR [Baidu Driver](https://pan.baidu.com/s/10mx3Oxy0PenTftHWInZYVw) (PSW: h5sn) and the pre_trained ResNet34 [Baidu Driver](https://pan.baidu.com/s/14PI0fHIawNlfBOubneMc0w) (PSW: mthj).
 
 ## To Test
 
 ### For testing on RGB-D VSOD benchmarks
-1. Download the trained model from [Baidu Driver](https://pan.baidu.com/s/1Z8Sut8bOGOwbUBf0Tmhm4w) (PSW: lze1) to './checkpoints/'.
+1. Download the trained model from [Baidu Driver](https://pan.baidu.com/s/10XBOfTQ9V01_8rc-GsD2nw) (PSW: hgm3) to './checkpoints/'.
 2. Run `python test.py` in the terminal.
 
 ### For testing on VSOD benchmarks
-1. Download the trained model from [Baidu Driver](https://pan.baidu.com/s/1Z8Sut8bOGOwbUBf0Tmhm4w) (PSW: lze1) to './checkpoints/'.
+1. Download the trained model from [Baidu Driver](https://pan.baidu.com/s/1sp7brnKiVd2MUvVqCkMy8Q) (PSW: p2q0) to './checkpoints/'.
 2. Run `python test.py` in the terminal.
 
 ## Saliency maps
-1. The saliency maps of our SMFNet can be download from [Baidu Driver](https://pan.baidu.com/s/1Z8Sut8bOGOwbUBf0Tmhm4w) (PSW: lze1, RGB-D VSOD benchmarks) and [Baidu Driver](https://pan.baidu.com/s/1Z8Sut8bOGOwbUBf0Tmhm4w) (PSW: lze1, VSOD benchmarks).
+1. The saliency maps of our SMFNet can be download from [Baidu Driver](https://pan.baidu.com/s/1A_jdsZErilXpgUatymNFLw) (PSW: u8rz, RGB-D VSOD benchmarks) and [Baidu Driver](https://pan.baidu.com/s/1MyR45E28WSb3YudHJaBjew) (PSW: 8mgu, VSOD benchmarks).
 2. We have constructed the first RGB-D VSOD benchmark, which contains the results of 19 state-of-the-art (SOTA) methods evaluated on RDVS and DVisal.
-   - We evaluate the originally trained models on the testing set of RDVS and DVisal. The saliency maps can be download from [Baidu Driver](https://pan.baidu.com/s/1Z8Sut8bOGOwbUBf0Tmhm4w) (PSW: lze1).
-   - We first fine-tune the originally trained models on the training set of RDVS and DVisal, and then evaluate the fine-tuned models on the testing set of RDVS and DVisal. The saliency maps can be download from [Baidu Driver](https://pan.baidu.com/s/1Z8Sut8bOGOwbUBf0Tmhm4w) (PSW: lze1).
+   - We evaluate the originally trained models on the testing set of RDVS and DVisal. The saliency maps can be download from [Baidu Driver](https://pan.baidu.com/s/1f5Z3cyHPDmT6Yak6zwX9xg) (PSW: 6fiu).
+   - We first fine-tune the originally trained models on the training set of RDVS and DVisal, and then evaluate the fine-tuned models on the testing set of RDVS and DVisal. The saliency maps can be download from [Baidu Driver](https://pan.baidu.com/s/1TowjWUehGmUS_lgomHrznA) (PSW: r1ri).
 
