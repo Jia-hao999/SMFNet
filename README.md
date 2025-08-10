@@ -1,5 +1,5 @@
 
-# SMFNet [[PDF]](https://arxiv.org/pdf/2507.21857v1)|[[Summary]](https://mp.weixin.qq.com/s/fUFah2ssS-6R0CgAbf6LLQ)
+# SMFNet [[PDF]](https://arxiv.org/pdf/2507.21857v1)|[[中文概要]](https://mp.weixin.qq.com/s/fUFah2ssS-6R0CgAbf6LLQ)
 
 
 Pytorch implementation for SMFNet: Unleashing the Power of Motion and Depth: A Selective Fusion Strategy for RGB-D Video Salient Object Detection.
