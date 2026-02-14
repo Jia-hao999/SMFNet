@@ -15,7 +15,7 @@ Pytorch implementation for SMFNet: Unleashing the Power of Motion and Depth: A S
 ## To Train 
 
 ### For training on RGB-D VSOD benchmarks
-1. Download the datasets (RDVS and DVisal) from [Baidu Driver](https://pan.baidu.com/s/1vYEDy4uPbbB20Cvik-oriQ) (PSW: d4ew) and save it at './dataset/'. 
+1. Download the datasets (RDVS, DVisal and ViDSOD) from [Baidu Driver](https://pan.baidu.com/s/1vYEDy4uPbbB20Cvik-oriQ) (PSW: d4ew) and save it at './dataset/'. 
 2. Download the pre_trained RGB, depth and flow stream models from [Baidu Driver](https://pan.baidu.com/s/1QIh1Fii5isWe0VOqcZxwCA) (PSW: lm6d) to './checkpoints/'.
 3. Run `python train.py` in terminal.
 
@@ -23,9 +23,6 @@ Pytorch implementation for SMFNet: Unleashing the Power of Motion and Depth: A S
 1. Download VSOD datasets from [Baidu Driver](https://pan.baidu.com/s/1-slo_A3bjG9H61I1_wEwLQ) (PSW: hveg) and save the training datasets (DAVIS, DAVSOD, FBMS) at './vsod_dataset/train'.
 2. Download the pre_trained RGB, depth and flow stream models from [Baidu Driver](https://pan.baidu.com/s/1-SgyEkNafLbXImqXswZWqQ) (PSW: 3c48) to './checkpoints/'.
 3. Run `python train.py` in terminal.
-
-### For pretraining single stream
-Run `python pretrain.py` in terminal. When pretraining RGB stream, we additionally use DUTS-TR [Baidu Driver](https://pan.baidu.com/s/10mx3Oxy0PenTftHWInZYVw) (PSW: h5sn) and the pre_trained ResNet34 [Baidu Driver](https://pan.baidu.com/s/14PI0fHIawNlfBOubneMc0w) (PSW: mthj).
 
 ## To Test
 
